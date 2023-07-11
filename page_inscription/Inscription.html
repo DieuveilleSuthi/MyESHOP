@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+    <title>Inscription</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="Inscription.css">
+    
+
+</head>
+ 
+<body>
+    <header>
+      <h2>Inscrivez-vous! </h2>   
+      <form name="newCommand" action="#" class="box" id="new-command" onsubmit="return false">
+        <div class="container">          
+           <input type="text" name="nom" placeholder="Nom" required><br><br>      
+           <input type="text" name="adresse" placeholder="Adresse" required><br><br>                    
+           <input type="email" name="email" placeholder="email" required><br><br>
+           <input type="password" name="pass" placeholder="password"><br>
+    </div>
+     <button type="submit" class="btn" onclick="ajouter()">S'inscrire</button>
+     <button type="button" class="btn"  onclick="supprimer()">Supprimer</button>
+     <button type="reset"  class="btn" onclick="annuler()">Annuler</button>
+     <main>
+    <div class="box">
+         
+        <table class="datatable">
+        <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Adresse</th>
+              <th>Mail</th>
+              <th>password</th>
+            </tr>
+        </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+</main>
+</form>
+</header>
+<script>
+        
+    var newCommandForm = document.forms.newCommand; 
+
+
+function ajouter(){
+    console.log(newCommandForm.elements.nom.value)
+    console.log(newCommandForm.elements.adresse.value)
+
+    
+    const newItem = document.createElement('tr')
+    const nomTd = document.createElement('td')
+    const adresseTd = document.createElement('td')
+    const emailTd = document.createElement('td')
+    const passTd = document.createElement('td')
+
+    nomTd.textContent = document.newCommand.nom.value
+    adresseTd.textContent = document.newCommand.adresse.value
+    
+    emailTd.textContent = document.newCommand.email.value
+    passTd.textContent = document.newCommand.pass.value
+    console.log(nomTd.textContent)
+    console.log(adresseTd.textContent)
+    console.log(emailTd.textContent)
+    console.log(passTd.textContent)
+    if (!document.newCommand.nom.checkValidity() ||
+          !document.newCommand.adresse.checkValidity() ||
+          !document.newCommand.email.checkValidity() ||
+          !document.newCommand.pass.checkValidity()
+         ) {
+               return
+        }
+    
+    
+    newItem.append(nomTd, adresseTd, emailTd, passTd)
+
+     
+    const table = document.querySelector('.datatable tbody')
+    table.appendChild(newItem)
+
+}
+ 
+function supprimer() {
+        const tbody = document.querySelector('.datatable tbody' )
+        while (tbody.firstChild) {
+          tbody.removeChild(tbody.firstChild)
+        }
+    
+}
+
+
+</script>
+</body>

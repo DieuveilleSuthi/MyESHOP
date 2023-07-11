@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css">
+  </head>
+  <body>
+<form class="form-container" name="=name-command" id ="new-command" onsubmit= "return validate()">
+  <p id="error"></p>
+  <h3>Login</h3>
+  <div class="form-grp">
+    <label for="=username"></label><br>
+    <input type="text" name="username" id="user" placeholder="Enter Username ">
+    <i class="fa fa-times-circle u_times"></i>
+    <i class="fa fa-check-circle u_check"></i>
+  </div>
+
+  <div class="form-grp">
+    <label for="=password"></label><br>
+    <input type="password" name="pasword" id="pass" placeholder="Enter Password ">
+    <i class="fa fa-times-circle p_times"></i>
+    <i class="fa fa-check-circle p_check"></i>
+  </div>
+
+  <div class="form-grp">
+    <input type="submit" name="login-btn" value="Login">
+  </div>
+  
+</form>
+<script>
+var user = document.querySelector('#user');
+user.addEventListener('keyup', function()
+{
+  var u_times = document.querySelector('.u_times');
+  var u_check = document.querySelector('.u_check');
+  if (user.value.length == 0 || user.value.length < 6){
+    user.style.border = '1px solid red';
+    u_times.style.display = 'block';
+    u_check.style.display='none';
+    return false;
+  }
+  else
+  {
+    user.style.border ='1px solid green';
+    u_times.style.display='none';
+    u_check.style.display = 'block';
+  }
+})
+
+var pass = document.querySelector('#pass');
+pass.addEventListener('keyup', function()
+{
+  var p_times = document.querySelector('.p_times');
+  var p_check = document.querySelector('.p_check');
+  if (pass.value.length == 0 || pass.value.length < 6){
+    pass.style.border = '1px solid red';
+    p_times.style.display = 'block';
+    p_check.style.display='none';
+    return false;
+  }
+  else
+  {
+    pass.style.border ='1px solid green';
+    p_times.style.display='none';
+    p_check.style.display = 'block';
+  }
+})
+
+function validate() {
+  // body...
+  if (user.value == 0 || user.value.length < 6 ){
+    document.getElementById('error').innerHTML= 'Please enter a valid user';
+    return false;
+
+  } else if (pass.value == 0 || pass.value.length < 8) {
+    document.getElementById('error').innerHTML = 'password non valid';
+    return false;
+  } else {
+    alert('successfully logged in');
+  }
+} 
+</script>
+
+  </body>
+</html>
