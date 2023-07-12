@@ -171,3 +171,33 @@ button {
   transition: all .3s;
   margin-bottom: 2em;
 }
+
+/******************************FOOTER**************************/
+  footer
+  { 
+    margin-top :210px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.apropos
+{
+  color : white ;
+  background-color: transparent;
+  width: auto;
+  height: auto;
+  border: solid 2px;
+  border-width: 2px;
+  transition: color 2s background-color 2s width 2s height 2s;
+}
+
+.apropos:hover
+{
+  color: red;
+  background-color: white;
+  width : 20 px;
+  height: 20 px;
+ 
+
+}
