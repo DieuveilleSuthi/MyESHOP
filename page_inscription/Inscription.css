@@ -78,7 +78,7 @@ header .dropdown-1 .content
     font-size :1em;
     font-family: system-ui}
 
-/*body {
+main {
   background: linear-gradient(45deg, #FC466B, #3F5EFB);
   height: 100vh;
   display: flex;
@@ -87,7 +87,7 @@ header .dropdown-1 .content
   font-family: Times New Roman;
   
 
-}*/
+}
 h2 {
   text-align: center;
   font-family: Times New Roman;
