@@ -1,4 +1,0 @@
-# MyESHOP
-
-Site E-commerce
-
