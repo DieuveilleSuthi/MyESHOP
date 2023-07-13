@@ -1,12 +1,12 @@
-
-*
+ *
         { margin : 0;
           padding : 0;
           list-style : none;
           text-decoration : none;
           font-family: Times New Roman;
           }
-header, footer
+
+    header, footer
 
         { width : 100%;
          height : 85px;
@@ -16,7 +16,11 @@ header, footer
          box-shadow : 6px 6px 6px 4px;
        }
 
- header
+    h2
+    {
+      margin-top: 30px;
+    }
+    header
     {
       justify-content: space-evenly;
     }
@@ -28,7 +32,8 @@ header, footer
 
     header > a,
     header button,
-    footer span
+    footer span,
+    .parcelle
     {
 
       color : white;
@@ -67,20 +72,20 @@ header .dropdown-1 .content
     box-sizing: content-box;
      }
 
-    header .content a
+    header  a
 
   {
-
     display: flex;
     justify-content: space-between;
     margin : 5px;
     padding: 5px 5px;
     box-sizing: content-box;
     font-size :1em;
-    font-family: system-ui
+    font-family: system-ui;
+
   }
 
-.parcelle
+  .parcelle
   {
     transition: background-color 3s, height 2s, width 2s, color 2s;
     font-family: Times New Roman;
