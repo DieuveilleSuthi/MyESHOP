@@ -102,14 +102,20 @@ header .dropdown-1 .content
   }
  body
     {
-            background-color: #141e30;
+            /*background-color: #141e30;*/
             background: linear-gradient(45deg, #FC466B, #3F5EFB);
     }
-
+/*
+height : 550px;
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+*/
 
 main {
   
-  height: 100vh;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,13 +142,13 @@ form {
   text-align: center;
 }
 
-header {
+/*header {
   color: white;
   font-weight: 500;
   font-size: 1.4rem;
   margin-bottom: 60px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-}
+}*/
 
 input {
   background: transparent;
