@@ -101,6 +101,10 @@ header .dropdown-1 .content
     
   }
 
+ body
+    {
+            background-color: #141e30;
+    }
 
 section {
   display: flex;
@@ -108,7 +112,6 @@ section {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #141e30;
   background: linear-gradient(to right, #243b55,#141e30);
   position: relative;
 }
