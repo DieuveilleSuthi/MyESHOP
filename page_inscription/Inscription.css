@@ -78,6 +78,22 @@ header .dropdown-1 .content
     box-sizing: content-box;
     font-size :1em;
     font-family: system-ui}
+.parcelle
+  {
+    transition: background-color 3s, height 2s, width 2s, color 2s;
+    font-family: Times New Roman;
+  }
+
+  .parcelle:hover
+  {
+
+    background-color: white  ;
+    height : auto;
+    width : auto;
+    color : #A93226;
+    
+  }
+
 
 main {
   background: linear-gradient(45deg, #FC466B, #3F5EFB);
