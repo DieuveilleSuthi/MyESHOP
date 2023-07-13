@@ -113,8 +113,8 @@ height : 550px;
   align-items: center;
 */
 
-main {
-  
+.mainN {
+
   height: 550px;
   display: flex;
   justify-content: center;
@@ -124,7 +124,10 @@ main {
 
 }
 h2 {
-  text-align: center;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Times New Roman;
 }
 .container {
