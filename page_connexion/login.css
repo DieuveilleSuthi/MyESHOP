@@ -80,6 +80,23 @@ header .dropdown-1 .content
     font-family: system-ui
   }
 
+.parcelle
+  {
+    transition: background-color 3s, height 2s, width 2s, color 2s;
+    font-family: Times New Roman;
+  }
+
+  .parcelle:hover
+  {
+
+    background-color: white  ;
+    height : auto;
+    width : auto;
+    color : #A93226;
+    
+  }
+
+
 section {
   display: flex;
   width: 100%;
